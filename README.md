@@ -26,3 +26,7 @@ npm install react-native-gesture-handler @react-navigation/native
 npm install react-navigation-stack 
 
   Caso retorne erro ---> npm i --save @react-navigation/stack
+
+npx expo install react-native-maps
+
+npm install papaparse
