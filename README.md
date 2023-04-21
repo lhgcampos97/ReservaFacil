@@ -8,7 +8,9 @@ Abrir Android studio, digitar no terminal:
 npm run android
 
 expo register:
+
 Login: lucas.gois	
+
 Password: mw89#kH7KGtJDyW
 
 npm install --global eas-cli && \
@@ -22,4 +24,5 @@ eas init --id 3e072d61-9636-4b49-9cda-74a545e7b29c
 npm install react-native-gesture-handler @react-navigation/native
 
 npm install react-navigation-stack 
+
   Caso retorne erro ---> npm i --save @react-navigation/stack
