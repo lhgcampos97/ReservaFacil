@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
+import MapView from 'react-native-maps';
 
 const DATA = [
   {
@@ -45,6 +46,15 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
+      <MapView
+        style={styles.map}
+        initialRegion={{
+          latitude: -23.6442,
+          longitude: -46.5284,
+          latitudeDelta: 0.01,
+          longitudeDelta: 0.01,
+        }}
+      />
       <FlatList
         data={DATA}
         renderItem={renderItem}
@@ -59,6 +69,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+  },
+  map: {
+    flex: 7,
   },
   listContainer: {
     paddingHorizontal: 20,

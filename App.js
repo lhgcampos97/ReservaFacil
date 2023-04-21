@@ -35,7 +35,7 @@ function App() {
           name="HomeScreen"
           component={HomeScreen}
           options={{
-            title: 'Home Screen', //Set Header Title
+            title: '', //Set Header Title
             headerStyle: {
               backgroundColor: '#f4511e', //Set Header color
             },

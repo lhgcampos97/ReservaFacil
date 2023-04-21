@@ -1,11 +1,11 @@
-restaurante_id,restaurante_nome,restaurante_CNPJ,restaurante_endereço,restaurante_telefone,restaurante_capacidade,restaurante_categoria
-1,Habib's,31.372.443/0001-37,"Av. Dom Pedro II, 1175",(11) 4221-9898,150,árabe
-2,Yamato Sushi,29.638.072/0001-4,"R. das Palmeiras, 421",(11) 2534-1755,90,japonesa
-3,Restaurante La Cantina,22.865.990/0001-63,"R. Padre Manoel de Paiva, 66",(11) 4436-0343,85,italiana
-4,Sí Señor,10.291.617/0001-67,"R. das Caneleiras, 555",(11) 2324-7322,100,mexicana
-5,Restaurante Feijão de Corda,05.059.117/0001-64,"Av. Dom Pedro II, 1780",(11) 4421-4011,95,brasileira
-6,Simbad,03.253.453/0001-18,"Av. Dr. Cesário Bastos, 255",(11) 4992-5968,50,árabe
-7,Okazaki Sushi,10.769.000/0001-04,"Av. Padre Anchieta, 234",(11) 4459-5752,100,japonesa
-8,Cantina Al Caberno,03.856.811/0001-87,"Rua Edu Chaves, 221",(11) 4427-3615,125,italiana
-9,El Botin Restaurante Mexicano,05.918.299/0001-81,"R. das Figueiras, 473",(11) 94708-0462,170,mexicana
-10,Pilão Mineiro Restaurante,56.941.115/0001-35,"Av. Dom Pedro II, 1172",(11) 4436-2779,200,brasileira
+restaurante_id;restaurante_nome;restaurante_CNPJ;restaurante_endereço;restaurante_telefone;restaurante_capacidade;restaurante_categoria
+1;Habib's;31.372.443/0001-37;Av. Dom Pedro II, 1175;(11) 4221-9898;150;árabe
+2;Yamato Sushi;29.638.072/0001-4;R. das Palmeiras, 421;(11) 2534-1755;90;japonesa
+3;Restaurante La Cantina;22.865.990/0001-63;R. Padre Manoel de Paiva, 66;(11) 4436-0343;85;italiana
+4;Sí Señor;10.291.617/0001-67;R. das Caneleiras, 555;(11) 2324-7322;100;mexicana
+5;Restaurante Feijão de Corda;05.059.117/0001-64;Av. Dom Pedro II, 1780;(11) 4421-4011;95;brasileira
+6;Simbad;03.253.453/0001-18;Av. Dr. Cesário Bastos, 255;(11) 4992-5968;50;árabe
+7;Okazaki Sushi;10.769.000/0001-04;Av. Padre Anchieta, 234;(11) 4459-5752;100;japonesa
+8;Cantina Al Caberno;03.856.811/0001-87;Rua Edu Chaves, 221;(11) 4427-3615;125;italiana
+9;El Botin Restaurante Mexicano;05.918.299/0001-81;R. das Figueiras, 473;(11) 94708-0462;170;mexicana
+10;Pilão Mineiro Restaurante;56.941.115/0001-35;Av. Dom Pedro II, 1172;(11) 4436-2779;200;brasileira
