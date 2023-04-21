@@ -1,7 +1,7 @@
 # ReservaFacil
 
 No CMD:
-C:\projects\reactnative\hello_world>npm start
+C:\projects\reactnative\reservafacil>npm start
 
 Abrir Android studio, digitar no terminal:
 npm run android
