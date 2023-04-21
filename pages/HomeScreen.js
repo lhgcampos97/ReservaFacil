@@ -1,31 +1,47 @@
 import React from 'react';
 import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
-import MapView from 'react-native-maps';
+import MapView, { Marker } from 'react-native-maps';
 
 const DATA = [
   {
     id: '1',
-    name: 'Restaurant 1',
-    address: 'Address 1',
-    rating: 4.5,
+    name: 'Yamato Sushi',
+    address: 'R. das Palmeiras, 421',
+    rating: 4.4,
+    coordinate: {
+      latitude: -23.64718507224241,
+      longitude: -46.538526857618706,
+    },
   },
   {
     id: '2',
-    name: 'Restaurant 2',
-    address: 'Address 2',
-    rating: 4.2,
+    name: 'Restaurante La Cantina',
+    address: 'R. Padre Manoel de Paiva, 66',
+    rating: 4.5,
+    coordinate: {
+      latitude: -23.653686335658488,
+      longitude: -46.535540965840696,
+    },
   },
   {
     id: '3',
-    name: 'Restaurant 3',
-    address: 'Address 3',
-    rating: 4.0,
+    name: 'Sí Señor',
+    address: 'R. das Caneleiras, 555',
+    rating: 4.4,
+    coordinate: {
+      latitude: -23.647553947523825,
+      longitude: -46.54054557494435,
+    },
   },
   {
     id: '4',
-    name: 'Restaurant 4',
-    address: 'Address 4',
-    rating: 4.8,
+    name: 'Pilão Mineiro Restaurante',
+    address: 'Av. Dom Pedro II, 1172',
+    rating: 4.6,
+    coordinate: {
+      latitude: -23.64573496922144,
+      longitude: -46.53762754155964,
+    },
   },
 ];
 
@@ -49,12 +65,20 @@ const HomeScreen = ({ navigation }) => {
       <MapView
         style={styles.map}
         initialRegion={{
-          latitude: -23.6442,
-          longitude: -46.5284,
-          latitudeDelta: 0.01,
-          longitudeDelta: 0.01,
-        }}
-      />
+          latitude: -23.646884168116895,
+          longitude: -46.53820057346242,
+          latitudeDelta: 0.05,
+          longitudeDelta: 0.05,
+        }}>
+        {DATA.map(marker => (
+          <Marker
+            key={marker.id}
+            coordinate={marker.coordinate}
+            title={marker.name}
+            description={marker.address}
+          />
+        ))}
+      </MapView>
       <FlatList
         data={DATA}
         renderItem={renderItem}
