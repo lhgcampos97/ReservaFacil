@@ -11,13 +11,30 @@ import {
 } from "react-native";
 
 
-const LoginScreen = ( { navigation } ) => {
+const ForgetPassword = ( { navigation } ) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+  const [CPFCNPJ, setCPFCNPJ] = useState("");
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require("../assets/favicon.png")} />
       <StatusBar style="auto" />
+      <View style={styles.inputView}>
+        <TextInput
+          style={styles.TextInput}
+          placeholder="Name"
+          placeholderTextColor="#003f5c"
+          onChangeText={(name) => setName(name)}
+        />
+      </View>
+      <View style={styles.inputView}>
+        <TextInput
+          style={styles.TextInput}
+          placeholder="CPF or CNPJ"
+          placeholderTextColor="#003f5c"
+          onChangeText={(CPFCNPJ) => setCPFCNPJ(CPFCNPJ)}
+        />
+      </View>
       <View style={styles.inputView}>
         <TextInput
           style={styles.TextInput}
@@ -29,25 +46,27 @@ const LoginScreen = ( { navigation } ) => {
       <View style={styles.inputView}>
         <TextInput
           style={styles.TextInput}
-          placeholder="Password"
+          placeholder="Password."
+          placeholderTextColor="#003f5c"
+          secureTextEntry={true}
+          onChangeText={(password) => setPassword(password)}
+        />
+      </View>
+      <View style={styles.inputView}>
+        <TextInput
+          style={styles.TextInput}
+          placeholder="Repeat password."
           placeholderTextColor="#003f5c"
           secureTextEntry={true}
           onChangeText={(password) => setPassword(password)}
         />
       </View>
      <Button
-       onPress={() => navigation.navigate('HomeScreen')}
-       title="LOGIN"
-       style = {styles.loginBtn}
-       color="#FF1493"
+        onPress={() => navigation.navigate('LoginScreen')}
+        title="REGISTER NOW"
+        style = {styles.registerBtn}
+        color="#FF1493"
      />
-     <TouchableOpacity onPress={() => navigation.navigate('RegisterScreen')} style={styles.button, {marginTop: 10}}>
-       <Text style={styles.buttonText}>Register here</Text>
-     </TouchableOpacity>
-     <TouchableOpacity onPress={() => navigation.navigate('ForgetPassword')} style={[styles.button, {marginTop: 1}]}>
-       <Text style={styles.buttonText}>Forgot Password?</Text>
-     </TouchableOpacity>
-
     </View>
   );
 }
@@ -76,16 +95,12 @@ const styles = StyleSheet.create({
     padding: 10,
     marginLeft: 20,
   },
-  button: {
+  forgot_button: {
     height: 30,
-    marginBottom: 10,
+    marginBottom: 30,
   },
-  buttonText: {
-    color: '#007AFF',
-    fontSize: 16,
-  },
-  loginBtn: {
-    width: "80%",
+  registerBtn: {
+    width: "100%",
     borderRadius: 25,
     height: 50,
     alignItems: "center",
@@ -96,4 +111,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default LoginScreen;
+export default ForgetPassword;

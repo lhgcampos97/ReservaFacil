@@ -10,6 +10,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import LoginScreen from './pages/LoginScreen';
 import HomeScreen from './pages/HomeScreen';
+import ForgetPassword from './pages/ForgetPassword';
+import RegisterScreen from './pages/RegisterScreen';
 
 const Stack = createStackNavigator();
 
@@ -34,6 +36,34 @@ function App() {
         <Stack.Screen
           name="HomeScreen"
           component={HomeScreen}
+          options={{
+            title: '', //Set Header Title
+            headerStyle: {
+              backgroundColor: '#f4511e', //Set Header color
+            },
+            headerTintColor: '#fff', //Set Header text color
+            headerTitleStyle: {
+              fontWeight: 'bold', //Set Header text style
+            },
+          }}
+        />
+        <Stack.Screen
+          name="ForgetPassword"
+          component={ForgetPassword}
+          options={{
+            title: '', //Set Header Title
+            headerStyle: {
+              backgroundColor: '#f4511e', //Set Header color
+            },
+            headerTintColor: '#fff', //Set Header text color
+            headerTitleStyle: {
+              fontWeight: 'bold', //Set Header text style
+            },
+          }}
+        />
+        <Stack.Screen
+          name="RegisterScreen"
+          component={RegisterScreen}
           options={{
             title: '', //Set Header Title
             headerStyle: {
