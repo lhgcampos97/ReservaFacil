@@ -9,10 +9,6 @@ npm run android
 
 expo register:
 
-Login: lucas.gois	
-
-Password: mw89#kH7KGtJDyW
-
 npm install --global eas-cli && \
 
 npx create-expo-app reservafacil && \
