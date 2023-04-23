@@ -10,10 +10,25 @@ import {
   TouchableOpacity,
 } from "react-native";
 
+import clients from '../database/cliente.json';
+//console.log(clients);
 
 const LoginScreen = ( { navigation } ) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const handleLogin = () => {
+    const client = clients.find(c => c.cliente_email === email && c.cliente_senha === password);
+    if (client) {
+      // Login successful
+      navigation.navigate('HomeScreen');
+    } else {
+      // Login failed
+      alert('Invalid email or password');
+    }
+  };
+
+
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={require("../assets/favicon.png")} />
@@ -36,9 +51,9 @@ const LoginScreen = ( { navigation } ) => {
         />
       </View>
      <Button
-       onPress={() => navigation.navigate('HomeScreen')}
+       onPress={handleLogin}
        title="LOGIN"
-       style = {styles.loginBtn}
+       style={styles.loginBtn}
        color="#FF1493"
      />
      <TouchableOpacity onPress={() => navigation.navigate('RegisterScreen')} style={styles.button, {marginTop: 10}}>

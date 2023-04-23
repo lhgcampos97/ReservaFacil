@@ -1,5 +1,3 @@
-// Example: Switch from One Screen to another using React Navigation //
-// https://aboutreact.com/react-native-stack-navigation //
 import 'react-native-gesture-handler';
 
 import * as React from 'react';

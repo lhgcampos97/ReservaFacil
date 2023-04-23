@@ -76,7 +76,7 @@ const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <MapView
-        style={styles.map}
+        style={[styles.map, { minHeight: 200 }]}
         initialRegion={{
           latitude: -23.646884168116895,
           longitude: -46.53820057346242,
