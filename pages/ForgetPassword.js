@@ -29,7 +29,7 @@ const ForgetPassword = ( { navigation } ) => {
         onPress={() => navigation.navigate('LoginScreen')}
         title="Send email"
         style = {styles.registerBtn}
-        color="#FF1493"
+        color="#fa6559"
      />
     </View>
   );

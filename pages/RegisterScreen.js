@@ -46,7 +46,7 @@ const ForgetPassword = ( { navigation } ) => {
       <View style={styles.inputView}>
         <TextInput
           style={styles.TextInput}
-          placeholder="Password."
+          placeholder="Password"
           placeholderTextColor="#003f5c"
           secureTextEntry={true}
           onChangeText={(password) => setPassword(password)}
@@ -55,7 +55,7 @@ const ForgetPassword = ( { navigation } ) => {
       <View style={styles.inputView}>
         <TextInput
           style={styles.TextInput}
-          placeholder="Repeat password."
+          placeholder="Repeat password"
           placeholderTextColor="#003f5c"
           secureTextEntry={true}
           onChangeText={(password) => setPassword(password)}
@@ -65,7 +65,7 @@ const ForgetPassword = ( { navigation } ) => {
         onPress={() => navigation.navigate('LoginScreen')}
         title="REGISTER NOW"
         style = {styles.registerBtn}
-        color="#FF1493"
+        color="#fa6559"
      />
     </View>
   );
