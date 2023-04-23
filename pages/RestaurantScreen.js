@@ -1,16 +1,31 @@
-import React, {useState} from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import {Calendar, LocaleConfig} from 'react-native-calendars';
+import React, { useState } from 'react';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  SafeAreaView,
+} from 'react-native';
+import { Calendar, LocaleConfig } from 'react-native-calendars';
 import { addWeeks, format } from 'date-fns';
 
-const RestaurantScreen = ({ route }) => {
+const RestaurantScreen = ({ route, navigation }) => {
   const { name, address, waitTime, rating } = route.params;
   const [selected, setSelected] = useState('');
 
   // Get the current month and year
   const today = new Date();
   const maxDate = addWeeks(today, 4);
+  const formattedMinDate = format(today, 'yyyy-MM-dd');
   const formattedMaxDate = format(maxDate, 'yyyy-MM-dd');
+
+  const handleConfirmPress = () => {
+    if (selected) {
+      navigation.navigate('TimePickerScreen', { selectedDate: selected.dateString });
+    } else {
+      alert('Please select a date');
+    }
+  };
 
   return (
     <View style={styles.container}>
@@ -24,11 +39,14 @@ const RestaurantScreen = ({ route }) => {
       </View>
       <Text style={styles.selectText}>Select your date:</Text>
       <Calendar
-        minDate={today}
+        minDate={formattedMinDate}
         maxDate={formattedMaxDate}
-        onDayPress={(day) => console.log('selected day', day)}
+        onDayPress={(day) =>  {setSelected(day.dateString);}}
+        markedDates={{
+             [selected]: {selected: true, disableTouchEvent: true, selectedDotColor: 'orange'}
+        }}
       />
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={handleConfirmPress}>
         <Text style={styles.buttonText}>Confirm</Text>
       </TouchableOpacity>
     </View>
@@ -77,7 +95,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   button: {
-    backgroundColor: '#4CAF50',
+    backgroundColor: '#fa6559',
     borderRadius: 5,
     padding: 10,
     margin: 20,
