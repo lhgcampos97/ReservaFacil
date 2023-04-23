@@ -31,7 +31,7 @@ const LoginScreen = ( { navigation } ) => {
 
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require("../assets/logo_preto.jpeg")} resizeMode = "contain" />
+      <Image style={styles.image} source={require("../assets/logo_preto.png")} resizeMode = "contain" />
       <StatusBar style="auto" />
       <View style={styles.inputView}>
         <TextInput
