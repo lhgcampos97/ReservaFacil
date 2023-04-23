@@ -52,10 +52,20 @@ const DATA = [
   },
 ];
 
-const RestaurantCard = ({ name, address, waitTime, rating, latitude, longitude}) => {
+const RestaurantCard = ({ navigation, name, address, waitTime, rating, latitude, longitude}) => {
   const distance = (Math.sqrt(Math.pow(((posicaoAtualLon - longitude)*111), 2) + Math.pow(((posicaoAtualLat - latitude)*111), 2))).toFixed(2);
+  const handlePress = () => {
+        navigation.navigate('RestaurantScreen', {
+          name,
+          address,
+          waitTime,
+          rating,
+          latitude,
+          longitude,
+        });
+  }
   return (
-    <TouchableOpacity style={styles.card}>
+    <TouchableOpacity style={styles.card} onPress={handlePress}>
       <Text style={styles.name}>{name}</Text>
       <Text style={styles.address}>{address}</Text>
       <Text style={styles.waitTime}>{waitTime} MIN</Text>
@@ -69,9 +79,8 @@ const RestaurantCard = ({ name, address, waitTime, rating, latitude, longitude})
 const HomeScreen = ({ navigation }) => {
 
   const renderItem = ({ item }) => (
-    <RestaurantCard name={item.name} address={item.address} waitTime={item.waitTime} rating={item.rating} latitude={item.coordinate.latitude} longitude={item.coordinate.longitude} />
+    <RestaurantCard navigation = {navigation} name={item.name} address={item.address} waitTime={item.waitTime} rating={item.rating} latitude={item.coordinate.latitude} longitude={item.coordinate.longitude} />
   );
-
 
   return (
     <View style={styles.container}>
