@@ -38,7 +38,7 @@ const ForgetPassword = ( { navigation } ) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#f7f7f7",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     marginBottom: 40,
   },
   inputView: {
-    backgroundColor: "#FFC0CB",
+    backgroundColor: "#f4bbb6",
     borderRadius: 30,
     width: "70%",
     height: 45,
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginTop: 40,
-    backgroundColor: "#FF1493",
+    backgroundColor: "#fa6559",
   },
   label: {
     fontSize: 16,

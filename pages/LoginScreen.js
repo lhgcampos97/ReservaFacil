@@ -31,7 +31,7 @@ const LoginScreen = ( { navigation } ) => {
 
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require("../assets/favicon.png")} />
+      <Image style={styles.image} source={require("../assets/logo_preto.jpeg")} resizeMode = "contain" />
       <StatusBar style="auto" />
       <View style={styles.inputView}>
         <TextInput
@@ -54,7 +54,7 @@ const LoginScreen = ( { navigation } ) => {
        onPress={handleLogin}
        title="LOGIN"
        style={styles.loginBtn}
-       color="#FF1493"
+       color="#fa6559"
      />
      <TouchableOpacity onPress={() => navigation.navigate('RegisterScreen')} style={styles.button, {marginTop: 10}}>
        <Text style={styles.buttonText}>Register here</Text>
@@ -70,15 +70,17 @@ const LoginScreen = ( { navigation } ) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#f7f7f7",
     alignItems: "center",
     justifyContent: "center",
   },
   image: {
-    marginBottom: 40,
+    marginBottom: 10,
+    width: "70%",
+    flex: 1
   },
   inputView: {
-    backgroundColor: "#FFC0CB",
+    backgroundColor: "#f4bbb6",
     borderRadius: 30,
     width: "70%",
     height: 45,
@@ -96,7 +98,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   buttonText: {
-    color: '#007AFF',
+    color: '#060606',
     fontSize: 16,
   },
   loginBtn: {
