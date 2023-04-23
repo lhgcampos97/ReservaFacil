@@ -1,0 +1,79 @@
+[
+  {
+    "cliente_id": 1,
+    "cliente_nome": "Jonathan Olson",
+    "cliente_CPF": 92009399887,
+    "cliente_email": "jolson@example.net",
+    "cliente_senha": "@80GJJus9s"
+  },
+  {
+    "cliente_id": 2,
+    "cliente_nome": "Zachary Harper",
+    "cliente_CPF": 22692980075,
+    "cliente_email": "zharper@example.net",
+    "cliente_senha": "u(4v8OvM^W"
+  },
+  {
+    "cliente_id": 3,
+    "cliente_nome": "Cindy Willis",
+    "cliente_CPF": 55991618207,
+    "cliente_email": "cindywillis@example.net",
+    "cliente_senha": "!JFO^4Ab_T"
+  },
+  {
+    "cliente_id": 4,
+    "cliente_nome": "Caroline Stokes",
+    "cliente_CPF": 72111254463,
+    "cliente_email": "carolinestk@example.net",
+    "cliente_senha": "P_5VSoveDp"
+  },
+  {
+    "cliente_id": 5,
+    "cliente_nome": "Andrea White",
+    "cliente_CPF": 51989968927,
+    "cliente_email": "andrea.white@example.net",
+    "cliente_senha": "sF_Ge4+4)2"
+  },
+  {
+    "cliente_id": 6,
+    "cliente_nome": "Shane Owens",
+    "cliente_CPF": 25473739325,
+    "cliente_email": "shane.owens@example.net",
+    "cliente_senha": "Qy1AprKb$@"
+  },
+  {
+    "cliente_id": 7,
+    "cliente_nome": "Jennifer Jenkins",
+    "cliente_CPF": 51432739242,
+    "cliente_email": "jjenkins@example.net",
+    "cliente_senha": "!i&Mp9wN*1"
+  },
+  {
+    "cliente_id": 8,
+    "cliente_nome": "Justin Graham",
+    "cliente_CPF": 56731602572,
+    "cliente_email": "jgraham@example.net",
+    "cliente_senha": "-+kU$4Oynst"
+  },
+  {
+    "cliente_id": 9,
+    "cliente_nome": "Jessica Gross",
+    "cliente_CPF": 86070240891,
+    "cliente_email": "jessicagross@example.net",
+    "cliente_senha": "TrV#FasQ@3"
+  },
+  {
+    "cliente_id": 10,
+    "cliente_nome": "Kevin Harper",
+    "cliente_CPF": 46154343882,
+    "cliente_email": "kevin_harper@example.net",
+    "cliente_senha": ")IVFhNxE#4"
+  },
+  {
+    "cliente_id": 11,
+    "cliente_nome": "Lucas",
+    "cliente_CPF": 0,
+    "cliente_email": "teste",
+    "cliente_senha": "teste"
+  }
+]

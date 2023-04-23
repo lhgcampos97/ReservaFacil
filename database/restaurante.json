@@ -1,0 +1,92 @@
+[
+  {
+    "restaurante_id": 1,
+    "restaurante_nome": "Habib's",
+    "restaurante_CNPJ": "31.372.443/0001-37",
+    "restaurante_endereço": "Av. Dom Pedro II, 1175",
+    "restaurante_telefone": "(11) 4221-9898",
+    "restaurante_capacidade": 150,
+    "restaurante_categoria": "árabe"
+  },
+  {
+    "restaurante_id": 2,
+    "restaurante_nome": "Yamato Sushi",
+    "restaurante_CNPJ": "29.638.072/0001-4",
+    "restaurante_endereço": "R. das Palmeiras, 421",
+    "restaurante_telefone": "(11) 2534-1755",
+    "restaurante_capacidade": 90,
+    "restaurante_categoria": "japonesa"
+  },
+  {
+    "restaurante_id": 3,
+    "restaurante_nome": "Restaurante La Cantina",
+    "restaurante_CNPJ": "22.865.990/0001-63",
+    "restaurante_endereço": "R. Padre Manoel de Paiva, 66",
+    "restaurante_telefone": "(11) 4436-0343",
+    "restaurante_capacidade": 85,
+    "restaurante_categoria": "italiana"
+  },
+  {
+    "restaurante_id": 4,
+    "restaurante_nome": "Sí Señor",
+    "restaurante_CNPJ": "10.291.617/0001-67",
+    "restaurante_endereço": "R. das Caneleiras, 555",
+    "restaurante_telefone": "(11) 2324-7322",
+    "restaurante_capacidade": 100,
+    "restaurante_categoria": "mexicana"
+  },
+  {
+    "restaurante_id": 5,
+    "restaurante_nome": "Restaurante Feijão de Corda",
+    "restaurante_CNPJ": "05.059.117/0001-64",
+    "restaurante_endereço": "Av. Dom Pedro II, 1780",
+    "restaurante_telefone": "(11) 4421-4011",
+    "restaurante_capacidade": 95,
+    "restaurante_categoria": "brasileira"
+  },
+  {
+    "restaurante_id": 6,
+    "restaurante_nome": "Simbad",
+    "restaurante_CNPJ": "03.253.453/0001-18",
+    "restaurante_endereço": "Av. Dr. Cesário Bastos, 255",
+    "restaurante_telefone": "(11) 4992-5968",
+    "restaurante_capacidade": 50,
+    "restaurante_categoria": "árabe"
+  },
+  {
+    "restaurante_id": 7,
+    "restaurante_nome": "Okazaki Sushi",
+    "restaurante_CNPJ": "10.769.000/0001-04",
+    "restaurante_endereço": "Av. Padre Anchieta, 234",
+    "restaurante_telefone": "(11) 4459-5752",
+    "restaurante_capacidade": 100,
+    "restaurante_categoria": "japonesa"
+  },
+  {
+    "restaurante_id": 8,
+    "restaurante_nome": "Cantina Al Caberno",
+    "restaurante_CNPJ": "03.856.811/0001-87",
+    "restaurante_endereço": "Rua Edu Chaves, 221",
+    "restaurante_telefone": "(11) 4427-3615",
+    "restaurante_capacidade": 125,
+    "restaurante_categoria": "italiana"
+  },
+  {
+    "restaurante_id": 9,
+    "restaurante_nome": "El Botin Restaurante Mexicano",
+    "restaurante_CNPJ": "05.918.299/0001-81",
+    "restaurante_endereço": "R. das Figueiras, 473",
+    "restaurante_telefone": "(11) 94708-0462",
+    "restaurante_capacidade": 170,
+    "restaurante_categoria": "mexicana"
+  },
+  {
+    "restaurante_id": 10,
+    "restaurante_nome": "Pilão Mineiro Restaurante",
+    "restaurante_CNPJ": "56.941.115/0001-35",
+    "restaurante_endereço": "Av. Dom Pedro II, 1172",
+    "restaurante_telefone": "(11) 4436-2779",
+    "restaurante_capacidade": 200,
+    "restaurante_categoria": "brasileira"
+  }
+]
