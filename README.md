@@ -12,3 +12,7 @@ npm install
 
 eas init --id 3e072d61-9636-4b49-9cda-74a545e7b29c
 
+### APK
+
+Caso queira instalar a versão alpha diretamente o aplicativo em um dispositivo Android, a APK está disponibilizada na aba Releases:
+https://github.com/lhgcampos97/ReservaFacil/releases/tag/apk 
